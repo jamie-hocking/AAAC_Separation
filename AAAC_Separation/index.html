@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonate Acoustics - AAAC Separation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1 id="titleHeading">Resonate</h1>
+        <h2></h2>
+    </div>
+
+    <div>
+        <p id="preamble">
+            This tool is based on <i>Association of Australasian Acoustical Consultants Guideline for Commercial Building Acoustics Version 2.0</i>.
+            It is aimed at simplifying the calculation on Table 4 and Table 5 in the guideline, and is not a replacement for reading the guidelines.
+        </p>
+    </div>
+
+    <div id="bodyDiv">
+
+        <div class="spaceSelectors">
+        <label for="space1">Space 1:</label>
+        <select class="spaceDropdown" id="spaceSelector1">
+            <option value="Board and Conference Rooms">Board and Conference Rooms</option>
+            <option value="Cafeterias">Cafeterias</option>
+            <option value="Call Centres (Average Activity Level)">Call Centres (Average Activity Level)</option>
+            <option value="Call Centres (High Activity Level)">Call Centres (High Activity Level)</option>
+            <option value="Computer (Server) Rooms (Medium Tolerance)">Computer (Server) Rooms (Medium Tolerance)</option>
+            <option value="Computer (Server) Rooms (High Tolerance)">Computer (Server) Rooms (High Tolerance)</option> <!-- Complete these! -->
+            <option value="Corridors and Lobbies">Corridors and Lobbies</option>
+            <option value="Design Offices">Design Offices</option>
+            <option value="Drafting Offices">Drafting Offices</option>
+            <option value="General Office Areas">General Office Areas</option>
+            <option value="Private Offices">Private Offices</option>
+            <option value="Public Spaces">Public Spaces</option>
+            <option value="Reception Areas">Reception Areas</option>
+            <option value="Rest Rooms and Tea Rooms">Rest Rooms and Tea Rooms</option>
+            <option value="Toilets">Toilets</option>
+            <option value="Undercover Car Parks">Undercover Car Parks</option>
+        </select>
+        </div>
+
+        <div class="spaceSelectors">
+        <label for="space2">Space 2:</label>
+        <select class="spaceDropdown" id="spaceSelector2">
+            <option value="Board and Conference Rooms">Board and Conference Rooms</option>
+            <option value="Cafeterias">Cafeterias</option>
+            <option value="Call Centres (Average Activity Level)">Call Centres (Average Activity Level)</option>
+            <option value="Call Centres (High Activity Level)">Call Centres (High Activity Level)</option>
+            <option value="Computer (Server) Rooms (Medium Tolerance)">Computer (Server) Rooms (Medium Tolerance)</option>
+            <option value="Computer (Server) Rooms (High Tolerance)">Computer (Server) Rooms (High Tolerance)</option> <!-- Complete these! -->
+            <option value="Corridors and Lobbies">Corridors and Lobbies</option>
+            <option value="Design Offices">Design Offices</option>
+            <option value="Drafting Offices">Drafting Offices</option>
+            <option value="General Office Areas">General Office Areas</option>
+            <option value="Private Offices">Private Offices</option>
+            <option value="Public Spaces">Public Spaces</option>
+            <option value="Reception Areas">Reception Areas</option>
+            <option value="Rest Rooms and Tea Rooms">Rest Rooms and Tea Rooms</option>
+            <option value="Toilets">Toilets</option>
+            <option value="Undercover Car Parks">Undercover Car Parks</option>
+        </select>
+        </div>
+
+        <div id="resultBox">
+            <label for="dwInput">Dw Value:</label>
+            <input type="text" id="dwInput" readonly>
+        </div>
+
+    </div>
+
+    <script src="source.js"></script>
+</body>
+</html>
